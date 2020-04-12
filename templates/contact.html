@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+         {{ message }}
+      {% endfor %}
+   {% endif %}
+{% endwith %}
+<form action="" method="post">
+    {{ form.csrf_token() }}
+
+    {% for field in form if field.name != "csrf_token" %}
+        <p>{{ field.label() }}</p>
+        <p>{{ field }}
+            {% for error in field.errors %}
+                {{ error }}
+            {% endfor %}
+        </p>
+
+    {% endfor %}
+</form>
+
+</body>
+</html>

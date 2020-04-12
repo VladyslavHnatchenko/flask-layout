@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% block nav %}
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/user/3/">API</a></li>
+        </ul>
+    <p>What's up Man!</p>
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

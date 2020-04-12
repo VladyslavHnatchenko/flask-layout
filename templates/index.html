@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Child Title
+{% endblock %}
+
+{% block content %}
+    {% for bookmark in bookmarks %}
+        <p>{{ bookmark.title }}</p>
+    {% endfor %}
+{% endblock %}
