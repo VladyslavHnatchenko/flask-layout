@@ -52,7 +52,7 @@ mail = Mail(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-# msg = Message("Subject", sender="chack.norrys1991@gmail.com", recipients=['chack.norrys1991@gmail.com'])
+# msg = Message("Subject", sender="chack.norrys1991@gmail.com", recipients=['***@gmail.com'])
 # msg = Message("You are win 1.000.000$", recipients=["***@gmail.com"])
 # msg.html = "<h1>You are win 1.000.000$</h1>\n<p>What's up, Man!</p>" \
 #            "\n<a href='https://www.facebook.com/pg/Spanch-Boborg-441201049358840/posts/'>Your money HERE!</a>"
